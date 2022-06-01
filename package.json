@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon app.ts",
+    "dev": "SET NODE_ENV=development && nodemon app.ts",
     "start": "tsc --build && node dist/app.js",
     "start:clean": "rm -rf dist && tsc --build && node dist/app.js",
     "format": "prettier . --write",
