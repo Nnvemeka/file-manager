@@ -52,7 +52,6 @@ const api = createApplication({
 })
 
 const app = express()
-const port = 4000
 
 app.use('/graphql', graphqlHTTP({
   schema: api.schema,
@@ -60,6 +59,6 @@ app.use('/graphql', graphqlHTTP({
   graphiql: process.env.NODE_ENV === 'development'
 }))
 
-app.listen(port, () => {
-  console.log(`Application running on port ${port}.`)
+app.listen(process.env.PORT, () => {
+  console.log(`Application running on port ${process.env.PORT}.`)
 })
