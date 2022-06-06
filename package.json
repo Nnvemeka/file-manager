@@ -38,6 +38,7 @@
     "express-graphql": "^0.12.0",
     "graphql": "^16.5.0",
     "graphql-modules": "^2.0.0",
-    "luxon": "^2.4.0"
+    "luxon": "^2.4.0",
+    "nanoid": "^3.3.4"
   }
 }
